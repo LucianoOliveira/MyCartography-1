@@ -7,6 +7,8 @@
 //
 
 #import "BP2SViewController.h"
+#import "BP2S_availableOptionsViewController.h"
+#import "BP2S_selectedCriteriaViewController.h"
 
 @interface BP2SViewController ()
 
@@ -26,4 +28,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"showAvailableOptions"]) {
+        BP2S_availableOptionsViewController *availableOptionsController = (BP2S_availableOptionsViewController *)segue.destinationViewController;
+        [availableOptionsController setManagedObjectContext:_managedObjectContext];
+    }
+    else if ([segue.identifier isEqualToString:@"showSelectedCriteria"]){
+    
+    }
+}
 @end

@@ -21,6 +21,24 @@
 		F34A75B1190EC578000ED0A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A7593190EC577000ED0A5 /* UIKit.framework */; };
 		F34A75B9190EC578000ED0A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F34A75B7190EC578000ED0A5 /* InfoPlist.strings */; };
 		F34A75BB190EC578000ED0A5 /* MyCartographyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F34A75BA190EC578000ED0A5 /* MyCartographyTests.m */; };
+		F34A75C5190EC620000ED0A5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A75C4190EC620000ED0A5 /* CoreData.framework */; };
+		F34A75C8190EC633000ED0A5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F34A75C6190EC633000ED0A5 /* Model.xcdatamodeld */; };
+		F34A75CF190EC83D000ED0A5 /* NSString+converterCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = F34A75CE190EC83D000ED0A5 /* NSString+converterCSV.m */; };
+		F34A75D1190EC9DE000ED0A5 /* Resources.csv in Resources */ = {isa = PBXBuildFile; fileRef = F34A75D0190EC9DE000ED0A5 /* Resources.csv */; };
+		F34A75D4190ECBD9000ED0A5 /* Resources+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = F34A75D3190ECBD9000ED0A5 /* Resources+Extra.m */; };
+		F39B5AAD190FEF75004C5132 /* Status+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = F39B5AAC190FEF75004C5132 /* Status+Extra.m */; };
+		F39B5AB0190FEF88004C5132 /* BNPEntities+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = F39B5AAF190FEF88004C5132 /* BNPEntities+Extra.m */; };
+		F39B5AB3190FEF99004C5132 /* Activities+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = F39B5AB2190FEF99004C5132 /* Activities+Extra.m */; };
+		F39B5AB6190FEFAA004C5132 /* Roles+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = F39B5AB5190FEFAA004C5132 /* Roles+Extra.m */; };
+		F39B5AB9190FEFBA004C5132 /* Locations+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = F39B5AB8190FEFBA004C5132 /* Locations+Extra.m */; };
+		F39B5ABC190FF016004C5132 /* BNPEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = F39B5ABB190FF016004C5132 /* BNPEntities.m */; };
+		F39B5ABF190FF016004C5132 /* Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = F39B5ABE190FF016004C5132 /* Resources.m */; };
+		F39B5AC2190FF016004C5132 /* Locations.m in Sources */ = {isa = PBXBuildFile; fileRef = F39B5AC1190FF016004C5132 /* Locations.m */; };
+		F39B5AC5190FF016004C5132 /* Roles.m in Sources */ = {isa = PBXBuildFile; fileRef = F39B5AC4190FF016004C5132 /* Roles.m */; };
+		F39B5AC8190FF016004C5132 /* Activities.m in Sources */ = {isa = PBXBuildFile; fileRef = F39B5AC7190FF016004C5132 /* Activities.m */; };
+		F39B5ACB190FF017004C5132 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = F39B5ACA190FF017004C5132 /* Status.m */; };
+		F39B5ACE190FFE19004C5132 /* BP2S_selectedCriteriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39B5ACD190FFE19004C5132 /* BP2S_selectedCriteriaViewController.m */; };
+		F39B5AD419100D4F004C5132 /* BP2S_availableOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39B5AD319100D4F004C5132 /* BP2S_availableOptionsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +71,39 @@
 		F34A75B6190EC578000ED0A5 /* MyCartographyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyCartographyTests-Info.plist"; sourceTree = "<group>"; };
 		F34A75B8190EC578000ED0A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F34A75BA190EC578000ED0A5 /* MyCartographyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCartographyTests.m; sourceTree = "<group>"; };
+		F34A75C4190EC620000ED0A5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F34A75C7190EC633000ED0A5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F34A75CD190EC83D000ED0A5 /* NSString+converterCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+converterCSV.h"; path = "../../Museunum2/Museunum/NSString+converterCSV.h"; sourceTree = "<group>"; };
+		F34A75CE190EC83D000ED0A5 /* NSString+converterCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+converterCSV.m"; path = "../../Museunum2/Museunum/NSString+converterCSV.m"; sourceTree = "<group>"; };
+		F34A75D0190EC9DE000ED0A5 /* Resources.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Resources.csv; path = ../../Desktop/Resources.csv; sourceTree = "<group>"; };
+		F34A75D2190ECBD9000ED0A5 /* Resources+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Resources+Extra.h"; sourceTree = "<group>"; };
+		F34A75D3190ECBD9000ED0A5 /* Resources+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Resources+Extra.m"; sourceTree = "<group>"; };
+		F39B5AAB190FEF75004C5132 /* Status+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Status+Extra.h"; sourceTree = "<group>"; };
+		F39B5AAC190FEF75004C5132 /* Status+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Status+Extra.m"; sourceTree = "<group>"; };
+		F39B5AAE190FEF88004C5132 /* BNPEntities+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BNPEntities+Extra.h"; sourceTree = "<group>"; };
+		F39B5AAF190FEF88004C5132 /* BNPEntities+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BNPEntities+Extra.m"; sourceTree = "<group>"; };
+		F39B5AB1190FEF99004C5132 /* Activities+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Activities+Extra.h"; sourceTree = "<group>"; };
+		F39B5AB2190FEF99004C5132 /* Activities+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Activities+Extra.m"; sourceTree = "<group>"; };
+		F39B5AB4190FEFAA004C5132 /* Roles+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Roles+Extra.h"; sourceTree = "<group>"; };
+		F39B5AB5190FEFAA004C5132 /* Roles+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Roles+Extra.m"; sourceTree = "<group>"; };
+		F39B5AB7190FEFBA004C5132 /* Locations+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Locations+Extra.h"; sourceTree = "<group>"; };
+		F39B5AB8190FEFBA004C5132 /* Locations+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Locations+Extra.m"; sourceTree = "<group>"; };
+		F39B5ABA190FF016004C5132 /* BNPEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNPEntities.h; sourceTree = "<group>"; };
+		F39B5ABB190FF016004C5132 /* BNPEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNPEntities.m; sourceTree = "<group>"; };
+		F39B5ABD190FF016004C5132 /* Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
+		F39B5ABE190FF016004C5132 /* Resources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resources.m; sourceTree = "<group>"; };
+		F39B5AC0190FF016004C5132 /* Locations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Locations.h; sourceTree = "<group>"; };
+		F39B5AC1190FF016004C5132 /* Locations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Locations.m; sourceTree = "<group>"; };
+		F39B5AC3190FF016004C5132 /* Roles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Roles.h; sourceTree = "<group>"; };
+		F39B5AC4190FF016004C5132 /* Roles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Roles.m; sourceTree = "<group>"; };
+		F39B5AC6190FF016004C5132 /* Activities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activities.h; sourceTree = "<group>"; };
+		F39B5AC7190FF016004C5132 /* Activities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activities.m; sourceTree = "<group>"; };
+		F39B5AC9190FF017004C5132 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
+		F39B5ACA190FF017004C5132 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
+		F39B5ACC190FFE19004C5132 /* BP2S_selectedCriteriaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BP2S_selectedCriteriaViewController.h; sourceTree = "<group>"; };
+		F39B5ACD190FFE19004C5132 /* BP2S_selectedCriteriaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BP2S_selectedCriteriaViewController.m; sourceTree = "<group>"; };
+		F39B5AD219100D4F004C5132 /* BP2S_availableOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BP2S_availableOptionsViewController.h; sourceTree = "<group>"; };
+		F39B5AD319100D4F004C5132 /* BP2S_availableOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BP2S_availableOptionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F34A75C5190EC620000ED0A5 /* CoreData.framework in Frameworks */,
 				F34A7592190EC577000ED0A5 /* CoreGraphics.framework in Frameworks */,
 				F34A7594190EC577000ED0A5 /* UIKit.framework in Frameworks */,
 				F34A7590190EC577000ED0A5 /* Foundation.framework in Frameworks */,
@@ -82,6 +134,9 @@
 		F34A7583190EC577000ED0A5 = {
 			isa = PBXGroup;
 			children = (
+				F34A75D5190ECBE1000ED0A5 /* Categories */,
+				F34A75C6190EC633000ED0A5 /* Model.xcdatamodeld */,
+				F34A75CC190EC7B6000ED0A5 /* Model classes */,
 				F34A7595190EC577000ED0A5 /* MyCartography */,
 				F34A75B4190EC578000ED0A5 /* MyCartographyTests */,
 				F34A758E190EC577000ED0A5 /* Frameworks */,
@@ -101,6 +156,7 @@
 		F34A758E190EC577000ED0A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F34A75C4190EC620000ED0A5 /* CoreData.framework */,
 				F34A758F190EC577000ED0A5 /* Foundation.framework */,
 				F34A7591190EC577000ED0A5 /* CoreGraphics.framework */,
 				F34A7593190EC577000ED0A5 /* UIKit.framework */,
@@ -119,6 +175,10 @@
 				F34A75A5190EC577000ED0A5 /* BP2SViewController.m */,
 				F34A75A7190EC577000ED0A5 /* Images.xcassets */,
 				F34A7596190EC577000ED0A5 /* Supporting Files */,
+				F39B5ACC190FFE19004C5132 /* BP2S_selectedCriteriaViewController.h */,
+				F39B5ACD190FFE19004C5132 /* BP2S_selectedCriteriaViewController.m */,
+				F39B5AD219100D4F004C5132 /* BP2S_availableOptionsViewController.h */,
+				F39B5AD319100D4F004C5132 /* BP2S_availableOptionsViewController.m */,
 			);
 			path = MyCartography;
 			sourceTree = "<group>";
@@ -126,6 +186,9 @@
 		F34A7596190EC577000ED0A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F34A75D0190EC9DE000ED0A5 /* Resources.csv */,
+				F34A75CD190EC83D000ED0A5 /* NSString+converterCSV.h */,
+				F34A75CE190EC83D000ED0A5 /* NSString+converterCSV.m */,
 				F34A7597190EC577000ED0A5 /* MyCartography-Info.plist */,
 				F34A7598190EC577000ED0A5 /* InfoPlist.strings */,
 				F34A759B190EC577000ED0A5 /* main.m */,
@@ -150,6 +213,44 @@
 				F34A75B7190EC578000ED0A5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F34A75CC190EC7B6000ED0A5 /* Model classes */ = {
+			isa = PBXGroup;
+			children = (
+				F39B5AC9190FF017004C5132 /* Status.h */,
+				F39B5ACA190FF017004C5132 /* Status.m */,
+				F39B5AC6190FF016004C5132 /* Activities.h */,
+				F39B5AC7190FF016004C5132 /* Activities.m */,
+				F39B5AC3190FF016004C5132 /* Roles.h */,
+				F39B5AC4190FF016004C5132 /* Roles.m */,
+				F39B5AC0190FF016004C5132 /* Locations.h */,
+				F39B5AC1190FF016004C5132 /* Locations.m */,
+				F39B5ABD190FF016004C5132 /* Resources.h */,
+				F39B5ABE190FF016004C5132 /* Resources.m */,
+				F39B5ABA190FF016004C5132 /* BNPEntities.h */,
+				F39B5ABB190FF016004C5132 /* BNPEntities.m */,
+			);
+			name = "Model classes";
+			sourceTree = "<group>";
+		};
+		F34A75D5190ECBE1000ED0A5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F34A75D2190ECBD9000ED0A5 /* Resources+Extra.h */,
+				F34A75D3190ECBD9000ED0A5 /* Resources+Extra.m */,
+				F39B5AAB190FEF75004C5132 /* Status+Extra.h */,
+				F39B5AAC190FEF75004C5132 /* Status+Extra.m */,
+				F39B5AAE190FEF88004C5132 /* BNPEntities+Extra.h */,
+				F39B5AAF190FEF88004C5132 /* BNPEntities+Extra.m */,
+				F39B5AB1190FEF99004C5132 /* Activities+Extra.h */,
+				F39B5AB2190FEF99004C5132 /* Activities+Extra.m */,
+				F39B5AB4190FEFAA004C5132 /* Roles+Extra.h */,
+				F39B5AB5190FEFAA004C5132 /* Roles+Extra.m */,
+				F39B5AB7190FEFBA004C5132 /* Locations+Extra.h */,
+				F39B5AB8190FEFBA004C5132 /* Locations+Extra.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +332,7 @@
 			files = (
 				F34A75A8190EC577000ED0A5 /* Images.xcassets in Resources */,
 				F34A759A190EC577000ED0A5 /* InfoPlist.strings in Resources */,
+				F34A75D1190EC9DE000ED0A5 /* Resources.csv in Resources */,
 				F34A75A3190EC577000ED0A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +354,23 @@
 			files = (
 				F34A75A6190EC577000ED0A5 /* BP2SViewController.m in Sources */,
 				F34A759C190EC577000ED0A5 /* main.m in Sources */,
+				F39B5AC5190FF016004C5132 /* Roles.m in Sources */,
+				F34A75D4190ECBD9000ED0A5 /* Resources+Extra.m in Sources */,
+				F39B5ACB190FF017004C5132 /* Status.m in Sources */,
+				F39B5AC2190FF016004C5132 /* Locations.m in Sources */,
+				F39B5AD419100D4F004C5132 /* BP2S_availableOptionsViewController.m in Sources */,
+				F39B5AB0190FEF88004C5132 /* BNPEntities+Extra.m in Sources */,
+				F39B5AC8190FF016004C5132 /* Activities.m in Sources */,
+				F39B5ABC190FF016004C5132 /* BNPEntities.m in Sources */,
 				F34A75A0190EC577000ED0A5 /* BP2SAppDelegate.m in Sources */,
+				F34A75C8190EC633000ED0A5 /* Model.xcdatamodeld in Sources */,
+				F39B5AB3190FEF99004C5132 /* Activities+Extra.m in Sources */,
+				F39B5AB6190FEFAA004C5132 /* Roles+Extra.m in Sources */,
+				F39B5ACE190FFE19004C5132 /* BP2S_selectedCriteriaViewController.m in Sources */,
+				F39B5AAD190FEF75004C5132 /* Status+Extra.m in Sources */,
+				F39B5AB9190FEFBA004C5132 /* Locations+Extra.m in Sources */,
+				F34A75CF190EC83D000ED0A5 /* NSString+converterCSV.m in Sources */,
+				F39B5ABF190FF016004C5132 /* Resources.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +577,7 @@
 				F34A75C0190EC578000ED0A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F34A75C1190EC578000ED0A5 /* Build configuration list for PBXNativeTarget "MyCartographyTests" */ = {
 			isa = XCConfigurationList;
@@ -467,8 +586,22 @@
 				F34A75C3190EC578000ED0A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F34A75C6190EC633000ED0A5 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F34A75C7190EC633000ED0A5 /* Model.xcdatamodel */,
+			);
+			currentVersion = F34A75C7190EC633000ED0A5 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F34A7584190EC577000ED0A5 /* Project object */;
 }

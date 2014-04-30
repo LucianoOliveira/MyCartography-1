@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Activities" representedClassName="Activities" syncable="YES">
+        <attribute name="businessLine" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="resources" toMany="YES" deletionRule="Nullify" destinationEntity="Resources" inverseName="activity" inverseEntity="Resources" syncable="YES"/>
+    </entity>
+    <entity name="BNPEntities" representedClassName="BNPEntities" syncable="YES">
+        <attribute name="bnpEntity" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="resources" toMany="YES" deletionRule="Nullify" destinationEntity="Resources" inverseName="bnpEntity" inverseEntity="Resources" syncable="YES"/>
+    </entity>
+    <entity name="Locations" representedClassName="Locations" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="region" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="resources" toMany="YES" deletionRule="Nullify" destinationEntity="Resources" inverseName="location" inverseEntity="Resources" syncable="YES"/>
+    </entity>
+    <entity name="Resources" representedClassName="Resources" syncable="YES">
+        <attribute name="resourceID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="activity" maxCount="1" deletionRule="Nullify" destinationEntity="Activities" inverseName="resources" inverseEntity="Activities" syncable="YES"/>
+        <relationship name="bnpEntity" maxCount="1" deletionRule="Nullify" destinationEntity="BNPEntities" inverseName="resources" inverseEntity="BNPEntities" syncable="YES"/>
+        <relationship name="location" maxCount="1" deletionRule="Nullify" destinationEntity="Locations" inverseName="resources" inverseEntity="Locations" syncable="YES"/>
+        <relationship name="role" maxCount="1" deletionRule="Nullify" destinationEntity="Roles" inverseName="resources" inverseEntity="Roles" syncable="YES"/>
+        <relationship name="status" maxCount="1" deletionRule="Nullify" destinationEntity="Status" inverseName="resources" inverseEntity="Status" syncable="YES"/>
+    </entity>
+    <entity name="Roles" representedClassName="Roles" syncable="YES">
+        <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="resources" toMany="YES" deletionRule="Nullify" destinationEntity="Resources" inverseName="role" inverseEntity="Resources" syncable="YES"/>
+    </entity>
+    <entity name="Status" representedClassName="Status" syncable="YES">
+        <attribute name="globalStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="resources" toMany="YES" deletionRule="Nullify" destinationEntity="Resources" inverseName="status" inverseEntity="Resources" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Resources" positionX="8460" positionY="3110" width="128" height="133"/>
+        <element name="Locations" positionX="8683" positionY="3087" width="128" height="103"/>
+        <element name="Roles" positionX="8440" positionY="3312" width="128" height="73"/>
+        <element name="Activities" positionX="8505" positionY="2907" width="128" height="103"/>
+        <element name="Status" positionX="8251" positionY="3096" width="128" height="88"/>
+        <element name="BNPEntities" positionX="8260" positionY="2925" width="128" height="73"/>
+    </elements>
+</model>
