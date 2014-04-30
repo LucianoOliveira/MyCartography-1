@@ -21,12 +21,7 @@ BOOL availableOptionsAtTopLevel;
 #pragma mark Collection Datasource
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
    
-    if (availableOptionsAtTopLevel) {
-        return 1;
-    }
-    else{
-        return [[_fetchedResultsController sections] count];
-    }
+    return 1;
     
 }
 
@@ -88,11 +83,27 @@ BOOL availableOptionsAtTopLevel;
     else{
         NSFetchRequest *fetchRequest    = [[NSFetchRequest alloc] init];
         
-        NSEntityDescription *entity = [NSEntityDescription entityForName:_selectedTable inManagedObjectContext:_managedObjectContext];
+        
+        //se location
+            // se nivel 1 - agrupar por regiao
+            // se nivel 2 - agrupar por pais
+            // se nivel 3 nao é necessario agrupar
+        
+        //Por cada registo na tabela de locations, é possivel obter todos os recursos desta location fazendo
+        //NSSet *resources = (registo da location).resources
+        //Para saber quantos sao. [resources count];
+        //É preciso muda o fetchRequest dependendo da categoria seleccionada no inicio e do nivel em que estamos actualmente.
+        //Se estivermos no topo listar os nomes das tabelas;
+        //No 2º nivel, os campos da tabela escolhida
+        //No 3º nivel usar o fetchRequest agrupando os registos de acordo com o campo seleccionado
+        
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"Locations" inManagedObjectContext:_managedObjectContext];
         
         [fetchRequest setEntity:entity];
         
-        _fetchedResultsController               = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:_managedObjectContext sectionNameKeyPath:nil cacheName:_selectedTable];
+        [fetchRequest setPropertiesToGroupBy:[NSArray arrayWithObject:@"region"]];
+        
+        _fetchedResultsController               = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:_managedObjectContext sectionNameKeyPath:nil cacheName:nil];
         
         _fetchedResultsController.delegate = self;
         
